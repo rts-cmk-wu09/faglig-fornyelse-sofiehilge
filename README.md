@@ -1,73 +1,38 @@
-# Faglig fornyelse
+This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-**Varighed:** 
-10 dage (Faget strækker sig over to perioder på hver 5 dage. Begge fagperioder ligger umiddelbare forud for en periode med virksomhedsforlagt undervisning)
+## Getting Started
 
-**Niveau:**
-Rutineret (Faget henvender sig til rutinerede dig, som allerede har grundlæggende viden om webudvikling og er fortrolige med programmeringssprog, teknologier og frameworks inden for faget.)
+First, run the development server:
 
-**Evaluering:**
-Faget afsluttes med en samlet karakter, som tager højde for din indsats hen over de to perioder. Karakteren bliver tildelt ved afslutningen af fagets anden periode og vil afspejle din samlede indsats, forståelse og evne til at anvende den nyerhvervede viden til at udarbejde et konkret produkt.
+```bash
+npm run dev
+# or
+yarn dev
+# or
+pnpm dev
+```
 
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-## Indledning:
-I faget faglig fornyelse skal du igennem egen research tilegne dig viden om en relevante udviklingstendens, det kan for eksempel være et framework, bibliotek, et SDK eller noget fjerde som du kan benytte til at skabe et produkt som er relevant for din fagfaglige praksis, e.g. website, app etc.
+You can start editing the page by modifying `pages/index.js`. The page auto-updates as you edit the file.
 
-Det er et krav at du ikke fra tidligere undervisning har kendskab til den teknologi du vælger at fordybe dig i.
-Det er ligeledes et krav at du ikke "bare" følger en tutorial. Det kan være en god måde at komme i gang på, men det er vigtigt at du bruger den viden du får undervejs til at udvide produktet med egne features og at du kan påpege disse features i din gennemgang af produktet ved evaluering.
+[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.js`.
 
+The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
 
-## Formål:
-Virksomheder kan arbejde med forskellige teknologier afhængigt af deres branche og behov. Ved at have en bredere viden om forskellige teknologier bliver du bedre rustet til at tilpasse dig og lære nye teknologier hurtigere, hvis det bliver nødvendigt.
+This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
 
-Det er en central del af fagets formål at styrke din evne til at arbejde uafhængigt og opsøge ny viden på egen hånd inden for din praksis fagområde. 
+## Learn More
 
-Det er vigtigt, at du er bevidst om, at faget kræver en selvstændig indsats.
+To learn more about Next.js, take a look at the following resources:
 
+- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
+- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
 
-## Mål:
-Efter afslutningen af faget forventes det, at du har opnået følgende mål:
+You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
 
-1.	Du kan tilegne sig viden om aktuelle faglige og teknologiske udviklingstendenser og muligheder inden for webudvikleruddannelsens fagområde.
-2.	Du kan anvende den tilegnede viden i egen praksis. 
-3.	Du skal kunne demonstrere, hvordan den nye viden er kan anvendes i praksis ved at udvikle et konkret fungerende webbaseret produkt eller applikation.
+## Deploy on Vercel
 
+The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-## Opgavebeskrivelse:
-1. **Valg af emne:**
-* Vælg en teknologi fx. framework, bibliotek, et SDK
-* Vælg et specifikt emne inden for en af disse teknologier, som du ønsker at udforske og arbejde med.
-* Afklar dit valgte emne med underviseren og få bekræftet, at det passer inden for fagets rammer og mål.
-
-4.	**Informationsindsamling:**
-* Lav en indledende undersøgelse af det valgte emne. Opsøg fx relevante artikler, blogs, tutorials, dokumentation og andre kilder for at få en grundlæggende forståelse for teknologien.
-
-5.	**Udvælgelse af en konkrete problemstilling:**
-* Definer en specifik problemstilling eller opgave, som du vil arbejde med inden for det valgte emne.
-* Sikr dig, at problemstillingen er realistisk at løse inden for den tidsramme, du har til rådighed.
-
-6.	**Udvikling af det konkrete produkt:**
-* Implementer og eksperimenter med den valgte teknologi for at løse den valgte problemstilling eller opgave.
-
-7.	**Test:**
-* Test dit produkt grundigt for at sikre, at det fungerer som forventet inden endeligt push.
-
-8.	**Aflevering:**
-* Aflevering sker løbende når du pusher til projektets repository. 
-
-
-## For dig med aftale omkring virksomhedsforlagt undervisning:
-
-Dit valg af emne kan være frit, men det anbefales, at emnet relateres til den teknologi, som den virksomhed, du skal i virksomhedsforlagt undervisning hos, anvender af flere gode grunde:
-
-**Professionelt indtryk:**
-Ved at have en god forståelse for virksomhedens teknologiske landskab viser du interesse og engagement i virksomhedens kerneområde. Det sender et positivt signal til dine praktikvejledere og kollegaer, at du har taget initiativ til at lære om de værktøjer og teknologier, de arbejder med.
-
-**Effektivitet og produktivitet:** 
-Du behøver ikke bruge unødig tid på at lære de grundlæggende ting, men kan i stedet bidrage med din viden og erfaring på en måde som skaber værdi for produktet og virksomheden.
-
-**Mulighed for at stille relevante spørgsmål:**
-Når du allerede har en grundlæggende forståelse for de anvendte teknologier, kan du stille mere præcise og relevante spørgsmål til dine kollegaer og vejledere. Dette kan bidrage til en mere meningsfuld dialog og læring under praktikforløbet.
-
-**Skabe merværdi:** 
-Hvis du under praktikken kan demonstrere, at du har kendskab til relevante teknologier og har idéer til, hvordan de kan udnyttes eller forbedres, vil du kunne skabe merværdi for virksomheden. Det kan være med til at øge chancerne for, at de overvejer at tilbyde dig en stilling efter praktikperioden.
+Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
