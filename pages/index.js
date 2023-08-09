@@ -5,10 +5,23 @@ import PlaceDetail from "@/components/PlaceDetail";
 import { Flex } from "@chakra-ui/react";
 import { useState } from "react";
 
+const places = [
+  { name: "Sample Place1" },
+  { name: "Sample Place1" },
+  { name: "Sample Place1" },
+  { name: "Sample Place1" },
+  { name: "Sample Place1" },
+  { name: "Sample Place1" },
+  { name: "Sample Place1" },
+  { name: "Sample Place1" },
+  { name: "Sample Place1" },
+];
+
 const Home = () => {
   const [coordinates, setCoordinates] = useState({ lat: 0, lng: 0 });
- const [type, setType] = useState('restaurants')
- const [ratings, setRatings] = useState('')
+  const [type, setType] = useState("restaurants");
+  const [ratings, setRatings] = useState("");
+  const [isLoading, setIsLoading] = useState(false);
   return (
     <Flex
       justifyContent={"center"}
@@ -19,12 +32,12 @@ const Home = () => {
       maxHeight={"100vh"}
       position={"realtive"}
     >
-      <Header 
-      setType = {setType}
-      setRatings = {setRatings}
-      setCoordinates = {setCoordinates}
+      <Header
+        setType={setType}
+        setRatings={setRatings}
+        setCoordinates={setCoordinates}
       />
-      {/*   <List /> */}
+        <List places={places} isLoading={isLoading}/>
       <Map setCoordinates={setCoordinates} coordinates={coordinates} />
     </Flex>
   );
