@@ -3,7 +3,7 @@ import List from "@/components/List";
 import Map from "@/components/Map";
 import PlaceDetail from "@/components/PlaceDetail";
 import { Flex } from "@chakra-ui/react";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 const places = [
   { name: "Sample Place1" },
@@ -18,10 +18,22 @@ const places = [
 ];
 
 const Home = () => {
-  const [coordinates, setCoordinates] = useState({ lat: 0, lng: 0 });
+  const [coordinates, setCoordinates] = useState({});
   const [type, setType] = useState("restaurants");
   const [ratings, setRatings] = useState("");
   const [isLoading, setIsLoading] = useState(false);
+
+  useEffect(() => {
+    // get the users current location on initial login
+
+    navigator.geolocation.getCurrentPosition(
+      ({ coords: { latitude, longitude } }) => {
+        console.log({ latitude, longitude });
+        setCoordinates({ lat: latitude, lng: longitude });
+      }
+    );
+  }, []);
+
   return (
     <Flex
       justifyContent={"center"}
@@ -37,7 +49,7 @@ const Home = () => {
         setRatings={setRatings}
         setCoordinates={setCoordinates}
       />
-        <List places={places} isLoading={isLoading}/>
+      <List places={places} isLoading={isLoading} />
       <Map setCoordinates={setCoordinates} coordinates={coordinates} />
     </Flex>
   );
