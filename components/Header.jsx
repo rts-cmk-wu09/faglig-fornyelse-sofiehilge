@@ -4,8 +4,10 @@ import {
   InputGroup,
   InputRightElement,
   Menu,
+  MenuList,
   MenuButton,
   MenuItem,
+  Text,
 } from "@chakra-ui/react";
 import { Autocomplete } from "@react-google-maps/api";
 import React from "react";
@@ -55,17 +57,66 @@ const Header = (setType, setRatings, setCoordinates) => {
             cursor={"pointer"}
           >
             <Menu>
-                <BiStar fontSize={25}/>
-                <MenuButton mx={2} transition='all 0.2s' borderRadius={'md'}>
-                    Choose ratings
-                </MenuButton>
-                <MenuList>
-                    <MenuItem display={'flex'} alignItems={'center'} justifyContent={"center"} onClick={() => setRatings("")}>
-                    <Text>
-                        All Rating
-                    </Text>
-                    </MenuItem>
-                </MenuList>
+              <BiStar fontSize={25} />
+              <MenuButton mx={2} transition="all 0.2s" borderRadius={"md"}>
+                Choose ratings
+              </MenuButton>
+              <MenuList>
+                <MenuItem
+                  display={"flex"}
+                  alignItems={"center"}
+                  justifyContent={"center"}
+                  onClick={() => setRatings("")}
+                >
+                  <Text fontSize={20} fontWeight={500} color={"gray.700"}>
+                    All Rating
+                  </Text>
+                </MenuItem>
+                <MenuItem
+                  display={"flex"}
+                  alignItems={"center"}
+                  justifyContent={"center"}
+                  onClick={() => setRatings(2)}
+                >
+                  <Text fontSize={20} fontWeight={500} color={"orange.500"}>
+                    2.0
+                  </Text>
+                  {/* <Rating size="small" value={2} readOnly />  */}
+                </MenuItem>
+                <MenuItem
+                  display={"flex"}
+                  alignItems={"center"}
+                  justifyContent={"center"}
+                  onClick={() => setRatings(3)}
+                >
+                  <Text fontSize={20} fontWeight={500} color={"orange.500"}>
+                    3.0
+                  </Text>
+                  {/* <Rating size="small" value={3} readOnly />  */}
+                </MenuItem>
+                <MenuItem
+                  display={"flex"}
+                  alignItems={"center"}
+                  justifyContent={"center"}
+                  onClick={() => setRatings(4)}
+                >
+                  <Text fontSize={20} fontWeight={500} color={"orange.500"}>
+                    4.0
+                  </Text>
+                  {/* <Rating size="small" value={4} readOnly />  */}
+                </MenuItem>
+                <MenuItem
+                  display={"flex"}
+                  alignItems={"center"}
+                  justifyContent={"center"}
+                  onClick={() => setRatings(4.5)}
+                >
+                  <Text fontSize={20} fontWeight={500} color={"orange.500"}>
+                    4.5
+                  </Text>
+                  {/* <Rating size="small" value={4.5} readOnly />  */}
+                </MenuItem>
+              </MenuList>
             </Menu>
           </Flex>
         </Flex>
