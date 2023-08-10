@@ -10,7 +10,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { Autocomplete } from "@react-google-maps/api";
-import React from "react";
+import {React} from "react";
 
 import {
   BiChevronDown,
