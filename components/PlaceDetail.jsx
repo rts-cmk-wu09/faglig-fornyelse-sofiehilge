@@ -11,19 +11,19 @@ const PlaceDetail = ({ place }) => {
       mb={2}
       shadow="lg"
       direction={"column"}
-      alignItems={"start"}
+      alignitems={"start"}
       justifyContent={"space-between"}
     >
       <Flex justifyContent={"space-between"} width="full">
         <Flex
           direction={"column"}
           justifyContent={"start"}
-          alignItems={"start"}
+          alignitems={"start"}
           width="full"
           px={2}
         >
           <Flex
-            alignItems={"center"}
+            alignitems={"center"}
             width={"full"}
             justifyContent={"space-between"}
           >
@@ -41,7 +41,7 @@ const PlaceDetail = ({ place }) => {
             </Text>
           </Flex>
           {/* ratings */}
-          <Flex alignItems={"center"} width={"full"}>
+          <Flex alignitems={"center"} width={"full"}>
             {/* <Rating size='small' value={Number(place.rating)} readOnly/> */}
             <Text
               fontSize={"sm"}
@@ -95,7 +95,7 @@ const PlaceDetail = ({ place }) => {
         />
       </Flex>
       {place?.address && (
-        <Flex aligntItems={"center"} width={"full"} px={1} my={2}>
+        <Flex aligntitems={"center"} width={"full"} px={1} my={2}>
           <IoLocation fontSize={20} color="gray" />
           <Text
             isTruncated
@@ -103,7 +103,6 @@ const PlaceDetail = ({ place }) => {
             fontWeight={500}
             color={"gray.700"}
             ml={1}
-            place
           >
             {place.address}
           </Text>

@@ -53,7 +53,7 @@ const Header = (setType, setRatings, setCoordinates) => {
         {/*  </Autocomplete> */}
         <Flex alignItems={"center"} justifyContent={"center"}>
           <Flex
-            alignItems={"center"}
+            alignitems={"center"}
             justifyContent={"center"}
             px={4}
             py={2}
@@ -74,7 +74,7 @@ const Header = (setType, setRatings, setCoordinates) => {
               <MenuList>
                 <MenuItem
                   display={"flex"}
-                  alignItems={"center"}
+                  alignitems={"center"}
                   justifyContent={"space-around"}
                   onClick={() => setRatings("")}
                 >
@@ -84,7 +84,7 @@ const Header = (setType, setRatings, setCoordinates) => {
                 </MenuItem>
                 <MenuItem
                   display={"flex"}
-                  alignItems={"center"}
+                  alignitems={"center"}
                   justifyContent={"space-around"}
                   onClick={() => setRatings(2)}
                 >
@@ -95,7 +95,7 @@ const Header = (setType, setRatings, setCoordinates) => {
                 </MenuItem>
                 <MenuItem
                   display={"flex"}
-                  alignItems={"center"}
+                  alignitems={"center"}
                   justifyContent={"space-around"}
                   onClick={() => setRatings(3)}
                 >
@@ -106,7 +106,7 @@ const Header = (setType, setRatings, setCoordinates) => {
                 </MenuItem>
                 <MenuItem
                   display={"flex"}
-                  alignItems={"center"}
+                  alignitems={"center"}
                   justifyContent={"space-around"}
                   onClick={() => setRatings(4)}
                 >
@@ -117,7 +117,7 @@ const Header = (setType, setRatings, setCoordinates) => {
                 </MenuItem>
                 <MenuItem
                   display={"flex"}
-                  alignItems={"center"}
+                  alignitems={"center"}
                   justifyContent={"space-around"}
                   onClick={() => setRatings(4.5)}
                 >
@@ -132,7 +132,7 @@ const Header = (setType, setRatings, setCoordinates) => {
           </Flex>
           {/* Restaurants */}
           <Flex
-            alignItems={"center"}
+            alignitems={"center"}
             justifyContent={"center"}
             px={4}
             py={2}
@@ -153,7 +153,7 @@ const Header = (setType, setRatings, setCoordinates) => {
           </Flex>
           {/* Hotels */}
           <Flex
-            alignItems={"center"}
+            alignitems={"center"}
             justifyContent={"center"}
             px={4}
             py={2}
@@ -174,7 +174,7 @@ const Header = (setType, setRatings, setCoordinates) => {
           </Flex>
           {/* Attractions */}
           <Flex
-            alignItems={"center"}
+            alignitems={"center"}
             justifyContent={"center"}
             px={4}
             py={2}
