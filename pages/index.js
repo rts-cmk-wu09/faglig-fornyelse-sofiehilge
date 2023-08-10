@@ -1,9 +1,9 @@
+import { Flex } from "@chakra-ui/react";
+import { useEffect, useState } from "react";
 import Header from "@/components/Header";
 import List from "@/components/List";
 import Map from "@/components/Map";
 import PlaceDetail from "@/components/PlaceDetail";
-import { Flex } from "@chakra-ui/react";
-import { useEffect, useState } from "react";
 import { getPlacesData } from "./api";
 
 const Home = () => {
@@ -27,12 +27,12 @@ const Home = () => {
 
   useEffect(() => {
     setIsLoading(true);
-    getPlacesData(bounds?.sw, bounds?.ne).then((data) => {
+    getPlacesData(type, bounds?.sw, bounds?.ne).then((data) => {
       console.log(data);
       setPlaces(data);
       setIsLoading(false);
     });
-  }, [coordinates, bounds]);
+  }, [type, coordinates, bounds]);
 
   return (
     <Flex
