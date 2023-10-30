@@ -8,11 +8,11 @@ import { getPlacesData } from "./api";
 
 const Home = () => {
   const [places, setPlaces] = useState([]);
-  const [filteredPlaces, setFilteredPlaces] = useState([])
+  const [filteredPlaces, setFilteredPlaces] = useState([]);
   const [coordinates, setCoordinates] = useState({});
   const [bounds, setBounds] = useState(null);
   const [type, setType] = useState("restaurants");
-  const [ratings, setRatings] = useState("");
+  /*  const [ratings, setRatings] = useState(""); */
   const [isLoading, setIsLoading] = useState(false);
 
   useEffect(() => {
@@ -26,7 +26,7 @@ const Home = () => {
     );
   }, []);
 
-/*   useEffect(() => {
+  /*   useEffect(() => {
     const filteredData = places.filter((place) => place.rating > ratings);
     setFilteredPlaces(filteredData)
   }, [ratings])
@@ -52,10 +52,13 @@ const Home = () => {
     >
       <Header
         setType={setType}
-        setRatings={setRatings}
+        /*     setRatings={setRatings} */
         setCoordinates={setCoordinates}
       />
-      <List places={filteredPlaces.length ? filteredPlaces : places} isLoading={isLoading} />
+      <List
+        places={filteredPlaces.length ? filteredPlaces : places}
+        isLoading={isLoading}
+      />
       <Map
         setCoordinates={setCoordinates}
         coordinates={coordinates}

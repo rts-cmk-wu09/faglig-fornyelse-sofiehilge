@@ -38,4 +38,86 @@ The easiest way to deploy your Next.js app is to use the [Vercel Platform](https
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
 
 
+Ratings compoenen, not working: 
+
+{}<Flex alignItems={"center"} justifyContent={"center"}>
+<Flex
+  alignitems={"center"}
+  justifyContent={"center"}
+  px={4}
+  py={2}
+  bg={"white"}
+  rounded={"full"}
+  ml={4}
+  shadow="lg"
+  cursor={"pointer"}
+  _hover={{ bg: "gray.100" }}
+  transition={"ease-in-out"}
+  transitionDuration={"0.3s"}
+>
+  {<Menu>
+   {/*  <BiStar fontSize={25} />
+    <MenuButton mx={2} transition="all 0.2s" borderRadius={"md"}>
+      Choose ratings
+    </MenuButton> */}
+    <MenuList>
+      <MenuItem
+        display={"flex"}
+        alignitems={"center"}
+        justifyContent={"space-around"}
+        onClick={() => setRatings("")}
+      >
+        <Text fontSize={20} fontWeight={500} color={"gray.700"}>
+          All Rating
+        </Text>
+      </MenuItem>
+      <MenuItem
+        display={"flex"}
+        alignitems={"center"}
+        justifyContent={"space-around"}
+        onClick={() => setRatings(2)}
+      >
+        <Text fontSize={20} fontWeight={500} color={"orange.500"}>
+          2.0
+        </Text>
+        {/* <Rating size="small" value={2} readOnly />  */}
+      </MenuItem>
+      <MenuItem
+        display={"flex"}
+        alignitems={"center"}
+        justifyContent={"space-around"}
+        onClick={() => setRatings(3)}
+      >
+        <Text fontSize={20} fontWeight={500} color={"orange.500"}>
+          3.0
+        </Text>
+        {/* <Rating size="small" value={3} readOnly />  */}
+      </MenuItem>
+      <MenuItem
+        display={"flex"}
+        alignitems={"center"}
+        justifyContent={"space-around"}
+        onClick={() => setRatings(4)}
+      >
+        <Text fontSize={20} fontWeight={500} color={"orange.500"}>
+          4.0
+        </Text>
+        {/* <Rating size="small" value={4} readOnly />  */}
+      </MenuItem>
+      <MenuItem
+        display={"flex"}
+        alignitems={"center"}
+        justifyContent={"space-around"}
+        onClick={() => setRatings(4.5)}
+      >
+        <Text fontSize={20} fontWeight={500} color={"orange.500"}>
+          4.5
+        </Text>
+        {/* <Rating size="small" value={4.5} readOnly />  */}
+      </MenuItem>
+    </MenuList>
+  </Menu>}
+  <BiChevronDown fontSize={25} />
+</Flex>
+
 Denne her video bruger jeg: https://www.youtube.com/watch?v=655FcX4SesQ&t=295s
