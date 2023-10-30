@@ -6,6 +6,7 @@ import {
   Text,
 } from "@chakra-ui/react";
 import { Autocomplete } from "@react-google-maps/api";
+import Link from "next/link";
 import { React, useState } from "react";
 
 import {
@@ -15,6 +16,7 @@ import {
   BiSearch,
   BiStar,
 } from "react-icons/bi";
+import { FaDrawPolygon } from "react-icons/fa";
 const Header = ({ setType, setCoordinates }) => {
   return (
     <Flex
@@ -28,25 +30,6 @@ const Header = ({ setType, setCoordinates }) => {
     >
       <Flex>
         <Flex>
-          {/* <Autocomplete> */}
-          <InputGroup width={"35vw"} shadow="lg">
-            <InputRightElement
-              pointerEvents={"none"}
-              children={<BiSearch color="gray" fontSize={20} />}
-            />
-            <InputGroup
-              type={"text"}
-              placeholder="Search Google Map..."
-              variant={"filled"}
-              fontSize={18}
-              bg={"white"}
-              color={"gray.700"}
-              _hover={{ bg: "whiteAplha.800" }}
-              _focus={{ bg: "whiteAlpha.800" }}
-              _placeholder={{ color: "gray:700" }}
-            />
-          </InputGroup>
-          {/*  </Autocomplete> */}
           {/* Ratings - not working */}
           {/* Restaurants */}
           <Flex
@@ -111,6 +94,26 @@ const Header = ({ setType, setCoordinates }) => {
               Attractions
             </Text>
           </Flex>
+          {/* Custom map */}
+          <Link href="/drawmap">
+            <Flex
+              alignitems={"center"}
+              justifyContent={"center"}
+              px={4}
+              py={2}
+              bg={"white"}
+              rounded={"full"}
+              ml={4}
+              shadow="lg"
+              cursor={"pointer"}
+              _hover={{ bg: "gray.100" }}
+            >
+              <FaDrawPolygon fontSize={25} />
+              <Text ml={3} fontSize={16} fontWeight={500}>
+                Draw on map
+              </Text>
+            </Flex>
+          </Link>
         </Flex>
       </Flex>
     </Flex>

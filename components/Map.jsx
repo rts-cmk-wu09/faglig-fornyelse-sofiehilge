@@ -21,6 +21,7 @@ const Map = ({ coordinates, setCoordinates, setBounds, places }) => {
       >
         {places?.map((place, i) => (
           <Box
+            key={place.location_id}
             lat={Number(place.latitude)}
             lng={Number(place.longitude)}
             position={"relative"}
