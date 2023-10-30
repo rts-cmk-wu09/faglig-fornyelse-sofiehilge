@@ -1,7 +1,7 @@
 import { Box } from "@chakra-ui/react";
 import React from "react";
 import GoogleMapReact from "google-map-react";
-import { IoLocation } from "react-icons/io5"
+import { IoLocation } from "react-icons/io5";
 
 const Map = ({ coordinates, setCoordinates, setBounds, places }) => {
   return (
@@ -17,16 +17,16 @@ const Map = ({ coordinates, setCoordinates, setBounds, places }) => {
           setCoordinates({ lat: e.center.lat, lng: e.center.lng });
           setBounds({ ne: e.marginBounds.ne, sw: e.marginBounds.sw });
         }}
-        conChildClick={() => {}}
+        onChildClick={() => {}}
       >
         {places?.map((place, i) => (
           <Box
             lat={Number(place.latitude)}
             lng={Number(place.longitude)}
-            position={"realtive"}
-            cursor={"pointer"}
+            position={"relative"}
+            cursor="pointer"
           >
-            <IoLocation fontSize={30} color="red" />
+            <IoLocation color="red" fontSize={30} />
           </Box>
         ))}
       </GoogleMapReact>
