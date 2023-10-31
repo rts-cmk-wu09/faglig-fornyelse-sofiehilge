@@ -9,7 +9,7 @@ import { getPlacesData } from "./api";
 const Home = () => {
   const [places, setPlaces] = useState([]);
   const [filteredPlaces, setFilteredPlaces] = useState([]);
-  const [coordinates, setCoordinates] = useState({});
+  const [coordinates, setCoordinates] = useState(null);
   const [bounds, setBounds] = useState(null);
   const [type, setType] = useState("restaurants");
   /*  const [ratings, setRatings] = useState(""); */
@@ -33,12 +33,14 @@ const Home = () => {
  */
   useEffect(() => {
     setIsLoading(true);
-    getPlacesData(type, bounds?.sw, bounds?.ne).then((data) => {
-      console.log(data);
-      setPlaces(data);
-      setIsLoading(false);
-    });
-  }, [type, coordinates, bounds]);
+    if (bounds) {
+      getPlacesData(type, bounds?.sw, bounds?.ne).then((data) => {
+        console.log(data);
+        setPlaces(data);
+        setIsLoading(false);
+      });
+    }
+  }, [type, bounds]);
 
   return (
     <Flex

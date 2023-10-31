@@ -1,6 +1,7 @@
 import { Flex } from "@chakra-ui/react";
 import Link from "next/link";
 import { GrMapLocation } from "react-icons/gr";
+import {GiWillowTree} from "react-icons/gi";
 import { FaDrawPolygon } from "react-icons/fa";
 import { Text } from "@chakra-ui/react";
 
@@ -60,6 +61,28 @@ const Menu = () => {
                 <FaDrawPolygon fontSize={25} />
                 <Text ml={3} fontSize={16} fontWeight={500}>
                   Draw on Maps
+                </Text>
+              </Flex>
+            </Link>
+            {/* ecoregion */}
+            <Link href="/coloredecoregion">
+              <Flex
+                alignitems={"center"}
+                justifyContent={"center"}
+                px={4}
+                py={2}
+                bg={"white"}
+                rounded={"full"}
+                ml={4}
+                shadow="lg"
+                cursor={"pointer"}
+                _hover={{ bg: "gray.100" }}
+                transition={"ease-in-out"}
+                transitionDuration={"0.3s"}
+              >
+                <GiWillowTree fontSize={25} />
+                <Text ml={3} fontSize={16} fontWeight={500}>
+                  Ecoregion
                 </Text>
               </Flex>
             </Link>

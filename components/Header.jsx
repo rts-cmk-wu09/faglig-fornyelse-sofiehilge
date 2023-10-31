@@ -17,6 +17,7 @@ import {
   BiStar,
 } from "react-icons/bi";
 import { FaDrawPolygon } from "react-icons/fa";
+import { GiWillowTree } from "react-icons/gi";
 const Header = ({ setType, setCoordinates }) => {
   return (
     <Flex
@@ -94,7 +95,7 @@ const Header = ({ setType, setCoordinates }) => {
               Attractions
             </Text>
           </Flex>
-          {/* Custom map */}
+          {/* draw map */}
           <Link href="/drawmap">
             <Flex
               alignitems={"center"}
@@ -111,6 +112,26 @@ const Header = ({ setType, setCoordinates }) => {
               <FaDrawPolygon fontSize={25} />
               <Text ml={3} fontSize={16} fontWeight={500}>
                 Draw on map
+              </Text>
+            </Flex>
+          </Link>
+          {/* ecoregion */}
+          <Link href="/coloredecoregion">
+            <Flex
+              alignitems={"center"}
+              justifyContent={"center"}
+              px={4}
+              py={2}
+              bg={"white"}
+              rounded={"full"}
+              ml={4}
+              shadow="lg"
+              cursor={"pointer"}
+              _hover={{ bg: "gray.100" }}
+            >
+              <GiWillowTree fontSize={25} />
+              <Text ml={3} fontSize={16} fontWeight={500}>
+                Ecoregion
               </Text>
             </Flex>
           </Link>

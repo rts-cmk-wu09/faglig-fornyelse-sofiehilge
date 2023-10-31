@@ -68,7 +68,12 @@ export default function custome() {
 
   return (
     <>
-      <div ref={mapRef} style={{ width: "100vw", height: "100vh" }} />
+      <div
+        ref={mapRef}
+        id="map"
+        className="map"
+        style={{ width: "100vw", height: "100vh" }}
+      />
       <Flex
         position={"absolute"}
         bottom={0}
