@@ -135,7 +135,7 @@ const Header = ({ setType, setCoordinates }) => {
               </Text>
             </Flex>
           </Link>
-          {/* ecoregion */}
+          {/* markeronmap */}
           <Link href="/markeronmap">
             <Flex
               alignitems={"center"}
@@ -152,6 +152,26 @@ const Header = ({ setType, setCoordinates }) => {
               <FaMapMarkerAlt fontSize={25} />
               <Text ml={3} fontSize={16} fontWeight={500}>
                 MarkerOnMap
+              </Text>
+            </Flex>
+          </Link>
+          {/* playgrounds */}
+          <Link href="/playgrounds">
+            <Flex
+              alignitems={"center"}
+              justifyContent={"center"}
+              px={4}
+              py={2}
+              bg={"white"}
+              rounded={"full"}
+              ml={4}
+              shadow="lg"
+              cursor={"pointer"}
+              _hover={{ bg: "gray.100" }}
+            >
+              <FaMapMarkerAlt fontSize={25} />
+              <Text ml={3} fontSize={16} fontWeight={500}>
+                Playgrounds
               </Text>
             </Flex>
           </Link>
