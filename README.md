@@ -121,3 +121,14 @@ Ratings compoenen, not working:
 </Flex>
 
 Denne her video bruger jeg: https://www.youtube.com/watch?v=655FcX4SesQ&t=295s
+
+
+DMI API: 
+
+Access Token: 40fa2e83-92fe-462c-ba2e-8392fed62c1b
+
+example of use: curl -H "Authorization: Bearer 40fa2e83-92fe-462c-ba2e-8392fed62c1b" "https://dmiapi-rest.govcloud.dk/management/"
+
+API key: 33ce7a87-94fc-4695-a3e5-f0399b9facfd
+
+example of use: curl -X GET "https://dmigw.govcloud.dk/v2/metObs" -H "X-Gravitee-Api-Key: 33ce7a87-94fc-4695-a3e5-f0399b9facfd"
