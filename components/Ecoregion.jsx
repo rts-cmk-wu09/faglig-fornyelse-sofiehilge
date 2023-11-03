@@ -93,6 +93,7 @@ export default function Ecoregion() {
         width={"full"}
         px={4}
         py={2}
+        justifyContent={"center"}
         zIndex={101}
       >
         <Flex
@@ -108,7 +109,7 @@ export default function Ecoregion() {
           _hover={{ bg: "gray.100" }}
           transition={"ease-in-out"}
           transitionDuration={"0.3s"}
-          w={300}
+          w={700}
           /*   onClick={() => setType("attractions")} */
         >
           <div id="info">&nbsp;</div>

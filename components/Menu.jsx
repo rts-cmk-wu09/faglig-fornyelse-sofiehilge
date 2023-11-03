@@ -3,6 +3,7 @@ import Link from "next/link";
 import { GrMapLocation } from "react-icons/gr";
 import { GiWillowTree } from "react-icons/gi";
 import { FaDrawPolygon, FaMapMarkerAlt } from "react-icons/fa";
+import {TbMoodKid} from "react-icons/tb"
 import { Text } from "@chakra-ui/react";
 
 const Menu = () => {
@@ -43,7 +44,7 @@ const Menu = () => {
               </Flex>
             </Link>
             {/* Draw on map */}
-            <Link href="/Drawmap">
+            <Link href="/drawmap">
               <Flex
                 alignitems={"center"}
                 justifyContent={"center"}
@@ -60,7 +61,7 @@ const Menu = () => {
               >
                 <FaDrawPolygon fontSize={25} />
                 <Text ml={3} fontSize={16} fontWeight={500}>
-                  Draw on Maps
+                  Draw on map
                 </Text>
               </Flex>
             </Link>
@@ -82,7 +83,7 @@ const Menu = () => {
               >
                 <GiWillowTree fontSize={25} />
                 <Text ml={3} fontSize={16} fontWeight={500}>
-                  Ecoregion
+                  Ecoregions
                 </Text>
               </Flex>
             </Link>
@@ -104,7 +105,7 @@ const Menu = () => {
               >
                 <FaMapMarkerAlt fontSize={25} />
                 <Text ml={3} fontSize={16} fontWeight={500}>
-                  MarkeronMap
+                  Pinmarker on map
                 </Text>
               </Flex>
             </Link>
@@ -124,7 +125,7 @@ const Menu = () => {
                 transition={"ease-in-out"}
                 transitionDuration={"0.3s"}
               >
-                <FaMapMarkerAlt fontSize={25} />
+                <TbMoodKid fontSize={25} />
                 <Text ml={3} fontSize={16} fontWeight={500}>
                   Playgrounds
                 </Text>

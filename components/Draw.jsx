@@ -8,6 +8,8 @@ import VectorSource from "ol/source/Vector.js";
 import XYZ from "ol/source/XYZ.js";
 import { Flex } from "@chakra-ui/react";
 
+const key = process.env.XYZ_API_KEY;
+
 export default function custome() {
   const mapRef = useRef(null);
   let drawInteraction; //save drawing data in a variable

@@ -1,4 +1,5 @@
 import { ChakraProvider } from "@chakra-ui/react";
+require('dotenv').config();
 
 function App({ Component, pageProps }) {
   return(

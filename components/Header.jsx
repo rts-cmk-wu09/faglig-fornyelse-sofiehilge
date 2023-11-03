@@ -16,6 +16,7 @@ import {
   BiSearch,
   BiStar,
 } from "react-icons/bi";
+import { TbMoodKid } from "react-icons/tb";
 import { FaDrawPolygon, FaMapMarkerAlt } from "react-icons/fa";
 import { GiWillowTree } from "react-icons/gi";
 const Header = ({ setType, setCoordinates }) => {
@@ -169,7 +170,7 @@ const Header = ({ setType, setCoordinates }) => {
               cursor={"pointer"}
               _hover={{ bg: "gray.100" }}
             >
-              <FaMapMarkerAlt fontSize={25} />
+              <TbMoodKid fontSize={25} />
               <Text ml={3} fontSize={16} fontWeight={500}>
                 Playgrounds
               </Text>
